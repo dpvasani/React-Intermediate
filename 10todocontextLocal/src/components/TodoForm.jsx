@@ -9,8 +9,8 @@ function TodoForm() {
       e.preventDefault()
 
       if (!todo) return
-
-      addTodo({ todo, completed: false})
+    //   addTodo({id:Date.now(), todo:todo, completed: false}) Both Are Same
+      addTodo({todo, completed: false})
       setTodo("")
     }
 
@@ -20,6 +20,7 @@ function TodoForm() {
               type="text"
               placeholder="Write Todo..."
               className="w-full border border-black/10 rounded-l-lg px-3 outline-none duration-150 bg-white/20 py-1.5"
+              // Wiring Of Input With State
               value={todo}
               onChange={(e) => setTodo(e.target.value)}
           />

@@ -29,7 +29,7 @@ function App() {
 
   useEffect(() => {
     // Browser Side We Can Have Direct Access Of LocalStorage
-    // Server Side We Don't Have Direct Access Of Local Storage
+    // Server Side We Don't Have Direct Access Of Local Storage 
     const todos = JSON.parse(localStorage.getItem("todos"))
 
     if (todos && todos.length > 0) {
